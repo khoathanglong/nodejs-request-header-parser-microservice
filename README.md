@@ -16,4 +16,4 @@ app.get('/',(req,res)=>{
 	let returnObject={ipaddress:IPaddress,language:language[0],software:osInfo}
 	res.json(returnObject)
 })
-app.listen(1337);
+app.listen(1337);//localhost:1337
