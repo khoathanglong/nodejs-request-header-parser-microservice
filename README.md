@@ -2,14 +2,14 @@
 
 User Story: I can get the IP address, language and operating system for my browser.
 
-const express=require('express');
+	const express=require('express');
 
-const app=express();
+	const app=express();
 
-const ip=require('ip');// npm install ip //use ip module to  get ip adress easily
+	const ip=require('ip');// npm install ip //use ip module to  get ip adress easily
 
-app.get('/',(req,res)=>{
-	
+	app.get('/',(req,res)=>{
+
 	res.setHeader("Content-Type","application/json")
 	
 	const IPaddress=ip.address();// get IP address
@@ -28,6 +28,6 @@ app.get('/',(req,res)=>{
 	
 	res.json(returnObject)
 
-})
+	})
 
-app.listen(1337);//localhost
+	app.listen(1337);//localhost
